@@ -24,3 +24,19 @@ Constraints:
 s and t consist only of lowercase English letters.
 
 */
+
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+var isSubsequence = function(s, t) {
+    let str = ''
+    for(let i = 0; i < t.length; i++){
+        if(s.includes(t[i])){
+            str += t[i]
+        }
+    }
+    if(str === s) return true
+    return false
+};
