@@ -29,5 +29,5 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  */
 var isPalindrome = function(x) {
     let str = x.toString();
-    return x === Number(str.split('').reverse().join(''))
+    return x === Number(str.split('').reverse().join(''));
 };
